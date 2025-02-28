@@ -13,10 +13,10 @@ export default function App() {
     <div>
       <Header />
       <Hero />
-      <div className="parallax" style={{ backgroundImage: `url('/images/photo1.jpg')` }}></div>
+      {/* <div className="parallax" style={{ backgroundImage: `url('/images/photo1.jpg')` }}></div> */}
       <About />
       <CaseStudies />
-      <div className="parallax" style={{ backgroundImage: `url('/images/photo2.jpg')` }}></div>
+      {/* <div className="parallax" style={{ backgroundImage: `url('/images/photo2.jpg')` }}></div> */}
 
       <Services />
       <ContactForm />
