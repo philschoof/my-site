@@ -69,7 +69,6 @@ export default function About() {
 
 
   const handleClick = (name) => {
-    console.log(name)
     setOpenSections((prevState) => ({ ...prevState, [name]: !prevState[name]}))
   }
     return (

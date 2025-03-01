@@ -24,7 +24,7 @@ export default function Services() {
         const rect = strong.getBoundingClientRect();
 
         if (rect.top < triggerPoint) {
-          strong.style.color = "#C44536"; // Change to red
+          strong.style.color = "#1A2A2A"; // Change to red
         } else {
           strong.style.color = "white"; // Reset
         }

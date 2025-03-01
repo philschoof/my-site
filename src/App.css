@@ -126,7 +126,8 @@ a:hover {
   padding: 5% 15%;
 }
 
-.about p, ul {
+.about p, 
+.about ul {
   margin: 24px;
 }
 

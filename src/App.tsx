@@ -4,6 +4,7 @@ import About from "./components/About";
 import CaseStudies from "./components/caseStudies/CaseStudies";
 import Services from "./components/Services";
 import ContactForm from "./components/ContactForm";
+import WhyWorkWithMe from "./components/WhyWorkWithMe";
 import Footer from "./components/Footer";
 
 import "./App.css";
@@ -19,6 +20,7 @@ export default function App() {
       {/* <div className="parallax" style={{ backgroundImage: `url('/images/photo2.jpg')` }}></div> */}
 
       <Services />
+      <WhyWorkWithMe />
       <ContactForm />
       <Footer />
     </div>

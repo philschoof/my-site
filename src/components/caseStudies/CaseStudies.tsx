@@ -33,8 +33,8 @@ export default function CaseStudies() {
         <section id="case-studies" className="case-studies">
           <h2>Case Studies</h2>
           <div className="case-study">
-            <h3>Fixing a Stalled Digital Platform</h3>
-            <div className={`case-study-content `}>
+            <h3 onClick={() => setOpenSections({ ...openSections, digitalPlatform: !openSections.digitalPlatform })}>Fixing a Stalled Digital Platform</h3>
+            <div className={`case-study-content ${openSections.digitalPlatform ? 'open' : ''}`}>
               <h4><strong>A small business owner with a high-traffic WordPress site struggling with limitations.</strong></h4>
                 <p>
                   The client had a growing business and a lot of ideas for new features, but their WordPress setup wasn’t built to support them. The site was slow, key features were unreliable, and every developer they spoke with told them that their ideas weren’t possible.
@@ -56,8 +56,8 @@ export default function CaseStudies() {
           </div>
 
           <div className="case-study">
-            <h3>Launching a Podcast from Scratch</h3>
-            <div className={`case-study-content `}>
+            <h3 onClick={() => setOpenSections({ ...openSections, podcast: !openSections.podcast })}>Launching a Podcast from Scratch</h3>
+            <div className={`case-study-content ${openSections.podcast ? 'open' : ''}`}>
               <h4><strong>A coach and business owner launching their first podcast.</strong></h4>
                 <p>
                   The client wanted to start a podcast to connect with their audience and grow their business. They had the vision, but no process for recording, editing, or publishing. They didn’t know what tools to use, how to structure the content, or how to keep up with production long-term.              
