@@ -10,9 +10,9 @@ export default function Hero() {
         const rect = strong.getBoundingClientRect();
 
         if (rect.top < triggerPoint) {
-          strong.style.color = "#C44536"; // Change to red
+          (strong as HTMLElement).style.color = "#C44536"; // Change to red
         } else {
-          strong.style.color = "333333"; // Reset
+          (strong as HTMLElement).style.color = "#333333"; // Reset color (fixed hex)
         }
         });
     };

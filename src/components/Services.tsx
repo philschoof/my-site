@@ -1,16 +1,5 @@
 import { useEffect } from "react";
 
-interface Service {
-  title: string;
-  description: string;
-}
-
-const services: Service[] = [
-  { title: "Web & Digital Strategy", description: "From idea to execution, I help structure and launch digital platforms." },
-  { title: "Podcast Production", description: "Recording, editing, and refining your podcast into a polished final product." },
-  { title: "Creative Consulting", description: "Helping you develop and refine creative ideas, branding, and storytelling." }
-];
-
 export default function Services() {
 
   useEffect(() => {
@@ -24,9 +13,9 @@ export default function Services() {
         const rect = strong.getBoundingClientRect();
 
         if (rect.top < triggerPoint) {
-          strong.style.color = "#1A2A2A"; // Change to red
+          (strong as HTMLElement).style.color = "#1A2A2A"; // Change to red
         } else {
-          strong.style.color = "white"; // Reset
+          (strong as HTMLElement).style.color = "white"; // Reset
         }
         });
     };

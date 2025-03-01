@@ -1,11 +1,14 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
-import postcss from 'postcss'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/my-site/',
   plugins: [react()],
   css: {
     postcss: './postcss.config.js'
+  },
+  build: {
+    outDir: 'docs',
   }
 })

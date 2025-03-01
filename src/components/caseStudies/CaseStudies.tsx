@@ -15,9 +15,9 @@ export default function CaseStudies() {
         const rect = border.getBoundingClientRect();
 
         if (rect.top < triggerPoint) {
-          border.style.color = "#D4E0DC"; // Change to red
+          (border as HTMLElement).style.color = "#D4E0DC"; // Change to red
         } else {
-          border.style.color = "#1A2A2A"; // Reset
+          (border as HTMLElement).style.color = "#1A2A2A"; // Reset
         }          
       })    
     }       
